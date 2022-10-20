@@ -591,8 +591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0acb6a12369b24abc9c4a7dec1dccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputNickName: {fileID: 0}
-  btnConnect: {fileID: 0}
 --- !u!1 &862188325
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,8 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0acb6a12369b24abc9c4a7dec1dccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputNickName: {fileID: 168458433}
-  btnConnect: {fileID: 862188327}
 --- !u!1 &1186692337
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +774,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0.53207546, b: 0.83362687, a: 0}
+  m_BackGroundColor: {r: 0.9454426, g: 1, b: 0.53333336, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

@@ -5,14 +5,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MetaMong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MetaMong/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CAJ/Scenes/CAJ_ConnectionScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CAJ/Scenes/CAJ_ConnectionScene.unity" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Assets/CAJ/Scripts/CAJ_ConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CAJ/Scripts/CAJ_ConnectionManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/CAJ_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/CAJ_Player.prefab" afterDir="false" />
 =======
+=======
+>>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+<<<<<<< HEAD
+>>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
+=======
 >>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +88,11 @@
       <updated>1666144280992</updated>
       <workItem from="1666144287627" duration="1806000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1666175297285" duration="6886000" />
+=======
+      <workItem from="1666175297285" duration="1753000" />
+>>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
 =======
       <workItem from="1666175297285" duration="1753000" />
 >>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
@@ -101,6 +111,7 @@
         <entry key="MAIN">
           <value>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <State>
               <option name="FILTERS">
                 <map>
@@ -114,6 +125,9 @@
                 </map>
               </option>
             </State>
+=======
+            <State />
+>>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
 =======
             <State />
 >>>>>>> parent of 60b600a (10.20 오전 RoomScene까지)
