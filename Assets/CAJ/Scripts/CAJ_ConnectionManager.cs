@@ -65,9 +65,7 @@ public class CAJ_ConnectionManager : MonoBehaviourPunCallbacks
         print(System.Reflection.MethodBase.GetCurrentMethod().Name);
         
         //LobbyScene으로 이동
-        //SceneManager.LoadScene("CAJ_LobbyScene");
-        //-> 씬이 로드되는 순간 들어오는 네트워크가 유실되지 않기 위해서 사용
-        PhotonNetwork.LoadLevel("CAJ_LobbyScene");
+        SceneManager.LoadScene("CAJ_LobbyScene");
     }
     
     // Update is called once per frame
