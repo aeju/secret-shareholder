@@ -8,13 +8,34 @@ using UnityEngine.SceneManagement;
 
 public class CAJ_ConnectionManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    void Start()
+    //닉네임 InputField
+    public InputField inputNickName;
+    //접속 Button
+    public Button btnConnect;
+    
+   //네트워크 연동되면 수정될 부분
+   //일단, 닉네임 입력 안 되면 접속 안 되도록
+   public void OnValueChanged(string s)
+   {
+       //만약 s의 길이가 0보다 크면 버튼 동작,
+       //그렇지 않으면 버튼 동작x
+       btnConnect.interactable = s.Length > 0;
+       print("OnValueChanged : " + s);
+   }
+   
+    
+    public void OnClickConnect()
     {
         //서버 접속
         //App ID, 지역, 서버에 요청을 함
         //요청을 했으면 받아야 함
         PhotonNetwork.ConnectUsingSettings();
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        inputNickName.onValueChanged.AddListener(OnValueChanged);
     }
 
     //마스터 서버 접속 성공시 호출(Lobby에 진입할 수 없는 상태)
@@ -29,6 +50,9 @@ public class CAJ_ConnectionManager : MonoBehaviourPunCallbacks
     {
         base.OnConnectedToMaster();
         print(System.Reflection.MethodBase.GetCurrentMethod().Name);
+        
+        //내 닉네임 설정
+        PhotonNetwork.NickName = inputNickName.text;
         
         //로비 진입 요청
         PhotonNetwork.JoinLobby();
