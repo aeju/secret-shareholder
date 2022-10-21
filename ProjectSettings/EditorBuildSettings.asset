@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/CAJ/Scenes/CAJ_ConnectionScene.unity
     guid: 52a8dea150054d34fabddf5decd462ca
   - enabled: 1
-    path: Assets/CAJ/Scenes/CAJ_LobbyScene.unity
+    path: Assets/CAJ/Scenes/CAJ_RoomScene.unity
     guid: a7f909630b047e74980b6389c00d6a72
+  - enabled: 1
+    path: Assets/CAJ/Scenes/CAJ_LobbyScene.unity
+    guid: dd057aa195945b8468b7c90e6fec9ed4
   m_configObjects: {}
