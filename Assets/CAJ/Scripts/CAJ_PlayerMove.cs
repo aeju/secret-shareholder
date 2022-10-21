@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
 using UnityEngine.EventSystems;
 
@@ -9,11 +10,14 @@ using UnityEngine.EventSystems;
 
 public class CAJ_PlayerMove : MonoBehaviourPun
 {
+    //닉네임
+    public Text nickName;
+    
+    
+    // --------플레이어 이동--------
     //속력
     public float moveSpeed = 5;
-    //characterController 담을 변수
-    CharacterController cc;
-
+    CharacterController cc; //characterController 담을 변수
     //중력
     float gravity = -9.81f;
     //점프파워
@@ -25,6 +29,9 @@ public class CAJ_PlayerMove : MonoBehaviourPun
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        
+        //닉네임 설정
+        nickName.text = photonView.Owner.NickName;
     }
 
     void Update()

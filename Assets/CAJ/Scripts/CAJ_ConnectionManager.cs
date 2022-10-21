@@ -35,6 +35,9 @@ public class CAJ_ConnectionManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedLobby();
         print(System.Reflection.MethodBase.GetCurrentMethod().Name);
+        
+        //내 닉네임 설정
+        PhotonNetwork.NickName = "MetaMong_" + Random.Range(1, 100);
 
         //LobbyScene으로 이동
         //SceneManager.LoadScene("CAJ_LobbyScene");

@@ -56,6 +56,7 @@ public class CAJ_LobbyManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         print("OnJoinedRoom");
+        PhotonNetwork.LoadLevel("CAJ_RoomScene");
     }
         
     //2-2-3. 방 참가가 실패 되었을 때 호출되는 함수
