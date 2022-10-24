@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using UnityEngine.EventSystems;
 
-public class ChatManager : MonoBehaviour
+public class ChatManager : MonoBehaviourPun
 {
     //ChatItem 공장
     public GameObject chatItemFactory;
@@ -11,24 +13,32 @@ public class ChatManager : MonoBehaviour
     //InputChat
     public InputField inputChat;
     
-    //ScrollView 의 Content transform
+    //Scrollview 의 Content transform
     public Transform trContent;
 
-    void OnSubmit(string s)
-    {
-        
-    }
-    
-    // Start is called before the first frame update
     void Start()
     {
-        //InputChat 에서 엔터를 눌렀을 때 호출 되는 함수 등록
+        //InputChat에서 엔터를 눌렀을 때 호출 되는 함수 등록
         inputChat.onSubmit.AddListener(OnSubmit);
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    void OnSubmit(string s)
     {
+        Debug.Log(s);
+        photonView.RPC("RpcAddChat", RpcTarget.All, s);
+    }
+
+    [PunRPC]
+    void RpcAddChat(string chat)
+    {
+        GameObject item = Instantiate(chatItemFactory, trContent);
+
+        Text t = item.GetComponent<Text>();
+        //t.text = inputChat.text;
+        t.text = chat;
+
+        inputChat.text = "";
         
+        inputChat.ActivateInputField();
     }
 }
