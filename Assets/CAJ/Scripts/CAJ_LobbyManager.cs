@@ -47,9 +47,9 @@ public class CAJ_LobbyManager : MonoBehaviourPunCallbacks
     }
 
 
-    private void OnMaxPlayerValueChanged(string max)
+    private void OnMaxPlayerValueChanged(string s)
     {
-        btnCreate.interactable = max.Length > 0 && inputRoomName.text.Length > 0;
+        btnCreate.interactable = s.Length > 0 && inputRoomName.text.Length > 0;
     }
     
 

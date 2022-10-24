@@ -30,8 +30,9 @@ public class CAJ_PlayerDoorEvent1 : MonoBehaviour
         {
             //SceneManager.LoadScene("InsideScene");
             //PhotonNetwork.LoadLevel("CAJ_LobbyScene");
-            PhotonNetwork.LoadLevel("CAJ_InsideScene");
-            PhotonNetwork.LoadLevel("CAJ_LobbyScene");
+            //PhotonNetwork.LoadLevel("CAJ_InsideScene");
+            //PhotonNetwork.LoadLevel("CAJ_LobbyScene");
+            PhotonNetwork.LoadLevel("CAJ_ChannelScene");
         }
     }
 }

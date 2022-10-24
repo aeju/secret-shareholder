@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/LYJ/Scenes/MeetingRoom.unity
     guid: 58b86c23087014e4e876fcd3f38d139b
   - enabled: 1
+    path: Assets/CAJ/Scenes/CAJ_ChannelScene.unity
+    guid: b8edc6a866e45c64fb43040d68d8a226
+  - enabled: 1
     path: Assets/CAJ/Scenes/CAJ_OutScene.unity
     guid: b42f489bec6841847a95d8968acf0d38
   - enabled: 1
