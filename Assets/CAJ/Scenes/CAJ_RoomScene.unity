@@ -881,7 +881,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1016902718}
-  - component: {fileID: 1016902719}
   - component: {fileID: 1016902720}
   - component: {fileID: 1016902721}
   m_Layer: 0
@@ -906,21 +905,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1016902719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016902717}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d087b3c5f0f584c83a6937ba468f6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatItemFactory: {fileID: 4517156975295319351, guid: 1476e041689531945bb49a19e7c9c348, type: 3}
-  inputChat: {fileID: 2015095880}
-  trContent: {fileID: 426350120}
 --- !u!114 &1016902720
 MonoBehaviour:
   m_ObjectHideFlags: 0

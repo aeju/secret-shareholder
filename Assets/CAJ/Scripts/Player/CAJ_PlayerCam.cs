@@ -22,6 +22,7 @@ public class CAJ_PlayerCam : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        
+        if (photonView.IsMine == false) return;
+        if (Cursor.visible == true) return;
     }
 }
