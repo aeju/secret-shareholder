@@ -5,37 +5,37 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_ConnectionScene.unity
     guid: 52a8dea150054d34fabddf5decd462ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_LobbyScene.unity
     guid: 514111565fe747440bb706ad49b6128a
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_RoomScene.unity
     guid: 9b345c5fb6c2c6a4b8bddaabd2001e65
-  - enabled: 1
-    path: Assets/LYJ/Scenes/Start.unity
-    guid: 3d33b78501f13d8419661876bcc5c5a4
-  - enabled: 1
-    path: Assets/LYJ/Scenes/OutScene.unity
-    guid: 1a46c324bd332a64a80fa09ad3f5558a
-  - enabled: 1
-    path: Assets/LYJ/Scenes/ChannelScene.unity
-    guid: a1b54c30d29179a40b3d6ae5c98bb0eb
-  - enabled: 1
-    path: Assets/LYJ/Scenes/InsideScene.unity
-    guid: b4d9c7158c16f2844968a901297cbb7c
-  - enabled: 1
-    path: Assets/LYJ/Scenes/MeetingRoom.unity
-    guid: 58b86c23087014e4e876fcd3f38d139b
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_ChannelScene.unity
     guid: b8edc6a866e45c64fb43040d68d8a226
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_OutScene.unity
     guid: b42f489bec6841847a95d8968acf0d38
-  - enabled: 1
+  - enabled: 0
     path: Assets/CAJ/Scenes/CAJ_InsideScene.unity
     guid: 45471a652d67d9640ae247ed35598bbd
+  - enabled: 1
+    path: Assets/CAJ/CAJ_New/NewScene/1New_ConnectionScene.unity
+    guid: 0fb6fa4820262a647ac7bff720b147d3
+  - enabled: 1
+    path: Assets/CAJ/CAJ_New/NewScene/2New_OutScene.unity
+    guid: 94c534a48973f2d4895eb8455888ff75
+  - enabled: 1
+    path: Assets/CAJ/CAJ_New/NewScene/3New_InsideScene.unity
+    guid: 1084f073f67e0fa4295902e2652a74a0
+  - enabled: 1
+    path: Assets/CAJ/CAJ_New/NewScene/4New_ChannelScene.unity
+    guid: 1015746fd03981f4a8b4d4eab2cac8e4
+  - enabled: 1
+    path: Assets/CAJ/CAJ_New/NewScene/5New_RoomScene.unity
+    guid: e64e4f3fab7a9e54193b1fe4e888d8f7
   m_configObjects: {}

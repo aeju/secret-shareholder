@@ -78,7 +78,7 @@ public class NewConnectionManager : MonoBehaviourPunCallbacks
 
         //LobbyScene으로 이동 ( SceneManager.LoadScene("CAJ_LobbyScene"); )
         //Scene이 로드 되는 순간 네트워크 유실 되지 않기 위해서 -> PhotonNetwork.LoadLevel 사용
-        PhotonNetwork.LoadLevel("CAJ_OutScene");
+        PhotonNetwork.LoadLevel("2New_OutScene");
     }
 
 

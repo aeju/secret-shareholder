@@ -19,6 +19,6 @@ public class CAJ_Channel : MonoBehaviourPun
 
     public void ClickBtn()
     {
-        PhotonNetwork.LoadLevel("CAJ_LobbyScene");
+        PhotonNetwork.LoadLevel("2New_LobbyScene");
     }
 }

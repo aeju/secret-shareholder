@@ -1,20 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Photon.Pun;
 
-// �ܺθʿ��� ���θ����� �̵��Ѵ�.
-// �÷��̾ ���� �ٴڿ� ������ �� ��ȯ�� �Ͼ��.
 
-public class CAJ_PlayerDoorEvent : MonoBehaviour
+public class New_FirstDoor : MonoBehaviour
 {
-    private Rigidbody rb;
-
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -22,8 +17,7 @@ public class CAJ_PlayerDoorEvent : MonoBehaviour
     {
         
     }
-
-    // �÷��̾� �±� ������Ʈ�� �浹�ϸ� �� ��ȯ�� �Ͼ��
+    
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")

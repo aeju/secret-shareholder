@@ -4,10 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 
-// �ܺθʿ��� ���θ����� �̵��Ѵ�.
-// �÷��̾ ���� �ٴڿ� ������ �� ��ȯ�� �Ͼ��.
 
-public class CAJ_PlayerDoorEvent : MonoBehaviour
+public class New_InsideDoor : MonoBehaviour
 {
     private Rigidbody rb;
 
@@ -30,7 +28,9 @@ public class CAJ_PlayerDoorEvent : MonoBehaviour
         {
             //SceneManager.LoadScene("InsideScene");
             //PhotonNetwork.LoadLevel("CAJ_LobbyScene");
-            PhotonNetwork.LoadLevel("3New_InsideScene");
+            //PhotonNetwork.LoadLevel("CAJ_InsideScene");
+            //PhotonNetwork.LoadLevel("CAJ_LobbyScene");
+            PhotonNetwork.LoadLevel("4New_ChannelScene");
         }
     }
 }
