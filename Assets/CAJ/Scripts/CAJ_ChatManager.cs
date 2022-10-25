@@ -19,7 +19,7 @@ public class CAJ_ChatManager : MonoBehaviourPun
     public RectTransform trContent;
     
     //나의 닉네임 색깔
-    Color nickColor;
+    Color nickColor; 
 
 
     void Start()
@@ -75,10 +75,12 @@ public class CAJ_ChatManager : MonoBehaviourPun
     void Update()
     {
         //esc 키를 누르면 커서를 활성화!
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(0))
         {
             Cursor.visible = true;
         }
+        
+        
         
         //어딘가를 클릭하면 커서를 활성화
         if(Input.GetMouseButtonDown(0))
@@ -89,10 +91,11 @@ public class CAJ_ChatManager : MonoBehaviourPun
                 Cursor.visible = false;
             }
 
-            //모바일땐
-            //if(EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) == false)
-            //{
-            //}
+            // //모바일땐
+            // if(EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) == false)
+            // {
+            //     
+            // }
         }
     }
     

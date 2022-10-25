@@ -7,6 +7,8 @@ using Photon.Pun;
 public class CAJ_PlayerName : MonoBehaviourPun
 {
     public Text nickName;
+    
+    
     // Start is called before the first frame update
     void Start()
     {

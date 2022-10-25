@@ -39,16 +39,30 @@ public class CAJ_LobbyManager : MonoBehaviourPunCallbacks
     
     private void OnRoomNameValueChanged(string room)
     {
-        //생성 버튼 활성화
-        btnCreate.interactable = room.Length > 0;
+        // //생성 버튼 활성화
+        // btnCreate.interactable = room.Length > 0;
+        // print("방 이름 입력 : " + room);
+        // //참여 버튼 활성화
+        // btnJoin.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
+        //
+        // //참가
+        // btnJoin.interactable = room.Length > 0;
+        // print("방 이름 입력 : " + room);
+        // //생성
+        // btnCreate.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0
+        //
+        //생성
+        btnCreate.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
         print("방 이름 입력 : " + room);
-        //참여 버튼 활성화
-        btnJoin.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
+        //참가
+        btnJoin.interactable = room.Length > 0;
+        
     }
 
 
     private void OnMaxPlayerValueChanged(string s)
     {
+        //생성
         btnCreate.interactable = s.Length > 0 && inputRoomName.text.Length > 0;
     }
     

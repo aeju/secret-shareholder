@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,11 +36,16 @@ public class CAJ_RoomItem : MonoBehaviour
     public void SetInfo(string roomName, int currPlayer, byte maxPlayer)
     {
         //자신의 게임 오브젝트 이름 -> roomName
-        name = roomName;
+        //name = roomName;
+        name = PhotonNetwork.CurrentRoom.Name;
         
         //방 정보 세팅 -> 방이름 (1/10)
-        roomInfo.text = roomName + "(" + currPlayer + "/" + maxPlayer + ")";
+        //roomInfo.text = roomName + "(" + currPlayer + "/" + maxPlayer + ")";
+        //roomInfo.text = PhotonNetwork.CurrentRoom.Name + "(" + currPlayer + "/" + maxPlayer + ")";
+        roomInfo.text = PhotonNetwork.CurrentRoom.Name + "(" + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers + ")";
     }
+    
+    
 
     public void SetInfo(RoomInfo info)
     {
