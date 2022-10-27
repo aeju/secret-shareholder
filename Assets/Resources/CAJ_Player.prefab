@@ -305,7 +305,6 @@ GameObject:
   - component: {fileID: 3014707708491914924}
   - component: {fileID: 2002663546975471966}
   - component: {fileID: 7829028632849019239}
-  - component: {fileID: -6258153160012304743}
   m_Layer: 0
   m_Name: CAJ_Player
   m_TagString: Untagged
@@ -426,18 +425,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6258153160012304743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3351013856050867170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919186e565e6aa84388b6efcb8b343f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5478855767261012178
 GameObject:
   m_ObjectHideFlags: 0
