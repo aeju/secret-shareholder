@@ -5,7 +5,7 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class New_LobbyManager : MonoBehaviourPunCallbacks
+public class CAJ_LobbyManager : MonoBehaviourPunCallbacks
 {
     //방 이름, 총 인원 -> 방 참가 되도록
     //방이름 InputField
@@ -199,7 +199,7 @@ public class New_LobbyManager : MonoBehaviourPunCallbacks
             GameObject go = Instantiate(roomItemFactory, roomListContent);
             
             //아이템 정보 세팅
-            New_RoomItem roomItem = go.GetComponent<New_RoomItem>();
+            CAJ_RoomItem roomItem = go.GetComponent<CAJ_RoomItem>();
             //RoomItem roomItem = go.GetComponent<RoomItem>();
             //roomItem.SetInfo(info.Name, info.PlayerCount, info.MaxPlayers);
             roomItem.SetInfo(info);

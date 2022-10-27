@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NewConnectionManager : MonoBehaviourPunCallbacks
+public class CAJ_ConnectionManager : MonoBehaviourPunCallbacks
 {
     //닉네임
     //닉네임 InputField
@@ -78,7 +78,7 @@ public class NewConnectionManager : MonoBehaviourPunCallbacks
 
         //LobbyScene으로 이동 ( SceneManager.LoadScene("CAJ_LobbyScene"); )
         //Scene이 로드 되는 순간 네트워크 유실 되지 않기 위해서 -> PhotonNetwork.LoadLevel 사용
-        PhotonNetwork.LoadLevel("2New_OutScene");
+        PhotonNetwork.LoadLevel("CAJ_OutScene");
     }
 
 

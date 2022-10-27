@@ -5,7 +5,7 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class New_LobbyManager : MonoBehaviourPunCallbacks
+public class CAJ_Elevator : MonoBehaviourPunCallbacks
 {
     //방 이름, 총 인원 -> 방 참가 되도록
     //방이름 InputField
@@ -35,34 +35,21 @@ public class New_LobbyManager : MonoBehaviourPunCallbacks
         inputRoomName.onValueChanged.AddListener(OnRoomNameValueChanged);
         //총 인원이 변할 때마다 호출하게 하는 함수 등록
         inputMaxPlayer.onValueChanged.AddListener(OnMaxPlayerValueChanged);
+        
     }
     
     private void OnRoomNameValueChanged(string room)
     {
-        // //생성 버튼 활성화
-        // btnCreate.interactable = room.Length > 0;
-        // print("방 이름 입력 : " + room);
-        // //참여 버튼 활성화
-        // btnJoin.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
-        //
-        // //참가
-        // btnJoin.interactable = room.Length > 0;
-        // print("방 이름 입력 : " + room);
-        // //생성
-        // btnCreate.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0
-        //
-        //생성
-        btnCreate.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
+        //생성 버튼 활성화
+        btnCreate.interactable = room.Length > 0;
         print("방 이름 입력 : " + room);
-        //참가
-        btnJoin.interactable = room.Length > 0;
-        
+        //참여 버튼 활성화
+        btnJoin.interactable = room.Length > 0 && inputMaxPlayer.text.Length > 0;
     }
 
 
     private void OnMaxPlayerValueChanged(string s)
     {
-        //생성
         btnCreate.interactable = s.Length > 0 && inputRoomName.text.Length > 0;
     }
     
@@ -129,7 +116,7 @@ public class New_LobbyManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         print("OnJoinedRoom");
-        PhotonNetwork.LoadLevel("5New_RoomScene");
+        PhotonNetwork.LoadLevel("CAJ_RoomScene");
     }
         
     //2-2-3. 방 참가가 실패 되었을 때 호출되는 함수
@@ -199,7 +186,7 @@ public class New_LobbyManager : MonoBehaviourPunCallbacks
             GameObject go = Instantiate(roomItemFactory, roomListContent);
             
             //아이템 정보 세팅
-            New_RoomItem roomItem = go.GetComponent<New_RoomItem>();
+            CAJ_RoomItem roomItem = go.GetComponent<CAJ_RoomItem>();
             //RoomItem roomItem = go.GetComponent<RoomItem>();
             //roomItem.SetInfo(info.Name, info.PlayerCount, info.MaxPlayers);
             roomItem.SetInfo(info);
