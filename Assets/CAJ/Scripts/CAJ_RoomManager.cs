@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
-using Photon.Pun.Demo.PunBasics;
 using Photon.Realtime;
 
 public class CAJ_RoomManager : MonoBehaviourPunCallbacks
 {
-    //public static GameManager //
     //방 정보 Text
-    //public Text roomInfo;
+    public Text roomInfo;
     
     //설명 Text
-    //public Text roomDescription;
+    public Text roomDescription;
     
     //맵 id
-    //private int mapId;
+    private int mapId;
 
     // Start is called before the first frame update
     void Start()
